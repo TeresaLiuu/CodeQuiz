@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Coding Quiz Chanllenge</h1>
+        <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers
+            will penalize your score time by five seconds!</p>
+
+        <button type="button" id="start">Start Quiz</button>
+        <div id="quiz">
+            <div id="question"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAns('A')"></div>
+                <div class="choice" id="B" onclick="checkAns('B')"></div>
+                <div class="choice" id="C" onclick="checkAns('C')"></div>
+                <div class="choice" id="D" onclick="checkAns('D')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+            </div>
+        </div>
+        <div id="score"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="questions.js"></script>
+
+</body>
+
+</html>
