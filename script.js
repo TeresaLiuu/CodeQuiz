@@ -4,16 +4,22 @@ var questionEl = document.getElementById("question");
 var choiceA = document.getElementById("A");
 var choiceB = document.getElementById("B");
 var choiceC = document.getElementById("C");
-var choiceD = document.getElementById("D");
 var counterEl = document.getElementById("counter");
-var scoreEl = document.getElementById("score");
-var score = 0;
+var scoreCount = document.getElementById("score");
+var h1Tag = document.getElementById ("title");
+var pTag = document.getElementById ("rule");
 
 
 startEl.addEventListener("click", startQuiz);
 
+
+
 function startQuiz(){
     startEl.style.display= "none";
+    h1Tag.style.display= "none";
+    pTag.style.display = "none";
+    
+
 }
 
 var questions = [
@@ -23,7 +29,6 @@ var questions = [
         choiceA: "<javascript>",
         choiceB: "<script>",
         choiceC: "<scripting>",
-        choiceD: "<js>",
         correct: "B"
     },
 
@@ -64,3 +69,5 @@ var questions = [
 
 ]
 
+// need to put questions array to quesiton div 
+// then style.display = block
