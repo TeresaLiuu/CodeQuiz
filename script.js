@@ -18,8 +18,10 @@ function startQuiz(){
     startEl.style.display= "none";
     h1Tag.style.display= "none";
     pTag.style.display = "none";
-    
-
+    questionEl.style.display="block";
+    choiceA.style.display="block";
+    choiceB.style.display="block";
+    choiceC.style.display="block";
 }
 
 var questions = [
@@ -69,5 +71,5 @@ var questions = [
 
 ]
 
-// need to put questions array to quesiton div 
-// then style.display = block
+
+questionEl.innerHTML= questions[0].question;
