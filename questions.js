@@ -1,47 +1,34 @@
 var questions = [
     {
-        question: "Inside which HTML element do we put the JavaScript?",
-
-        choiceA: "<javascript>",
-        choiceB: "<script>",
-        choiceC: "<scripting>",
-        choiceD: "<js>"
-        correct: "B"
+        question: 'What is Teresa\'s favorite color?',
+        choices :['Red', 'White', 'Blue', 'Green'],
+        correct: 3
     },
+    // questions.choices[i];
 
     {
-        question: "Where is the correct place to insert a JavaScript?",
-
-        choiceA: "Both the <head> and <body> section are correct",
-        choiceB: "The <body> section",
-        choiceC: "The <head> section"
-        correct: "A"
+        question: 'What country is Teresa from?',
+        choices:['Taiwan', 'Thailand', 'Japan', 'Korea'],
+        correct: 0
 
     },
     {
-        question: "What is the correct syntax for referring to an external script called 'xxx.js'?",
-
-        choiceA: "<script src = 'xxx.js'>",
-        choiceB: "<script href = 'xxx.js'>",
-        choiceC: "<script name='xxx.js'>"
-        correct: "A"
+        question: 'What is Teresa\'s favorite food?',
+        choices:['Bubble tea', 'Hotpot', 'Ice cream', 'All of above'],
+        correct: 3
 
     },
     {
-        question: "The external JavaScript file must contain the <script> tag",
-        
-        choiceA: "True",
-        choiceB: "False"
-        correct: "B"
+        question: 'What is Teresa\'s eye color?',
+        choices:['Blue', 'Brown', 'Green', 'Black'],
+        correct: 1
 
-        },
+    },
     {
-        question: "How do you create a function in JavaScript?",
-        choiceA: "Function =myFunction()",
-        choiceB: "Function myFunction()",
-        choiceC: "Function:myFunction()"
-        correct: "B"
+        question: 'How many clothes does Teresa have?',
+        choices:['10', '15', '20', 'Countless'],
+        correct: 3
 
-        }
+    }
 
 ]
