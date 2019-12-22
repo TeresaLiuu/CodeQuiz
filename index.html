@@ -28,14 +28,20 @@
                 <button type="button" id="choice3" onclick="validateAnswer(2)"></button>
                 <button type="button" id="choice4" onclick="validateAnswer(3)"></button>
             </div>
-
             <p id="result"></p>
         </div>
         <div id="score"></div>
+        <form>
+            <div id="enterName" class="form-group d-none">
+                <label for="exampleInputPassword1">Enter Your Name</label>
+                <input type="text" class="form-control" id="nameInput">
+                <button id="submitBttn" type="button" onclick="storeScore()" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
     </div>
 
-    <script src="script.js"></script>
     <script src="questions.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
