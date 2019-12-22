@@ -1,29 +1,25 @@
 
-var startEl = document.getElementById("start");
-var quizEl = document.getElementById("quiz");
-var questionEl = document.getElementById("question");
-// var choice1 = document.getElementById("A");
-// var choice2 = document.getElementById("B");
-// var choice3 = document.getElementById("C");
-// var choice4 = document.getElementById("D");
-var counterEl = document.getElementById("counter");
-var scoreCount = document.getElementById("score");
-var h1Tag = document.getElementById("title");
-var pTag = document.getElementById("rule");
-var time = 100;
+var startEl = document.getElementById('start');
+var quizEl = document.getElementById('quiz');
+var questionEl = document.getElementById('question');
+var counterEl = document.getElementById('counter');
+var scoreCount = document.getElementById('score');
+var h1Tag = document.getElementById('title');
+var pTag = document.getElementById('rule');
 var timerElement = document.getElementById('timer');
-var questionsIndex = 0;
 var buttonEl = document.getElementById('choices');
 var button1 = document.getElementById('choice1');
 var button2 = document.getElementById('choice2');
 var button3 = document.getElementById('choice3');
 var button4 = document.getElementById('choice4');
+var showAns = document.getElementById('result')
 var choicesIndex = 0;
+var questionsIndex = 0;
+var time = 100;
 
 
 
-
-// startEl.addEventListener("click", startQuiz);
+// startEl.addEventListener('click', startQuiz);
 
 function timer() {
     // Decrement time variable by 1
@@ -46,48 +42,39 @@ function gameOver() {
 }
 
 function validateAnswer(choice) {
-    // choice=0
-
-
-
-    //choice=0,1,2,3
+    
+    
     if (choice===questions[questionsIndex-1].correct){
-        alert("dffgfg");
-    };
+        showAns.innerHTML='correct';
+               
+    }
+    else{
+        showAns.innerHTML='wrong';
+    }
+
+    setTimeout(generateQuestion,1000);
+
+}
+    
     // Check if the button they clicked is the answer
     // If not, subtract 10 seconds from time
     // Run this each time they click a button
-}
+
 
 function generateQuestion() {
-
-    // TitleElement.innerHTML = '';
-    // ButtonEl.innerHTML = '';
-
-    // Create new question title
-    // Iterate through question choices
-    // Create button for each choice
-    // LOOP 
-    // Create button variable
-    // Add class attribute = 'question-buttons'
-    // Add class attribute to each button, responding to their text
-    // Add text content to each button
+    showAns.innerHTML="";
     button1.innerHTML = questions[questionsIndex].choices[0];
     button2.innerHTML = questions[questionsIndex].choices[1];
     button3.innerHTML = questions[questionsIndex].choices[2];
     button4.innerHTML = questions[questionsIndex].choices[3];
 
-    // Add this.addEventListener('click', generateQuestions);
-    // Append button to button element DIV
-
-    startEl.style.display = "none";
-    h1Tag.style.display = "none";
-    pTag.style.display = "none";
-    questionEl.style.display = "block";
-    buttonEl.style.display= "block";
+    startEl.style.display = 'none';
+    h1Tag.style.display = 'none';
+    pTag.style.display = 'none';
+    questionEl.style.display = 'block';
+    buttonEl.style.display= 'block';
    
 
-    // bootstrap class hide/show
 
     questionEl.innerHTML = questions[questionsIndex].question;
 

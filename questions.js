@@ -25,8 +25,8 @@ var questions = [
 
     },
     {
-        question: 'How many clothes does Teresa have?',
-        choices:['10', '15', '20', 'Countless'],
+        question: 'How many countries have Teresa been to?',
+        choices:['10', '5', '4', '7'],
         correct: 3
 
     }
