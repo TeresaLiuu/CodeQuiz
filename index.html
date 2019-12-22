@@ -17,16 +17,16 @@
         <h1 id="title">Coding Quiz Chanllenge</h1>
         <p id="rule">Try to answer the following code-related questions within the time limit. Keep in mind that
             incorrect answers
-            will penalize your score time by five seconds!</p>
+            will penalize your score time by 15 seconds!</p>
 
         <button type="button" id="start" onclick="startQuiz()">Start Quiz</button>
         <div id="quiz">
             <div id="question" style="display: none;"></div>
             <div id="choices" style="display: none;">
-                <button type="button" id="choice1" onclick="validateAnswer(0)"></button>
-                <button type="button" id="choice2" onclick="validateAnswer(1)"></button>
-                <button type="button" id="choice3" onclick="validateAnswer(2)"></button>
-                <button type="button" id="choice4" onclick="validateAnswer(3)"></button>
+                <button type="button" id="choice1" class="btn btn-primary btn-lg" onclick="validateAnswer(0)"></button>
+                <button type="button" id="choice2" class="btn btn-primary btn-lg" onclick="validateAnswer(1)"></button>
+                <button type="button" id="choice3" class="btn btn-primary btn-lg" onclick="validateAnswer(2)"></button>
+                <button type="button" id="choice4" class="btn btn-primary btn-lg" onclick="validateAnswer(3)"></button>
             </div>
             <p id="result"></p>
         </div>

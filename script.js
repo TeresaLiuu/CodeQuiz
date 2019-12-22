@@ -25,7 +25,6 @@ function timer() {
     --time;
     timerEl.innerHTML = 'Timer:' + time;
 
-    // If time ever reaches 0, end the game
     if (time <= 0) {
         gameOver();
     }
@@ -34,6 +33,7 @@ function timer() {
 function gameOver() {
     questionEl.innerHTML = "";
     buttonEl.innerHTML = "";
+    showAns.innerHTML = "";
     clearInterval(timeInterval);
     enterName.classList.remove('d-none');
     scoreCount.innerHTML = 'Your score is ' + time;
@@ -54,7 +54,6 @@ function validateAnswer(choice) {
     setTimeout(generateQuestion, 1000);
 
 }
-
 
 function generateQuestion() {
     if (questionsIndex >= questions.length) {
@@ -85,6 +84,6 @@ function startQuiz() {
 
 function storeScore() {
     nameInput.value;
-    localStorage.setItem(nameInput.value , time);
+    localStorage.setItem(nameInput.value, time);
 }
 
