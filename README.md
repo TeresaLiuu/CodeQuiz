@@ -1,5 +1,5 @@
 # Welcome to my Quiz
-This is simple fact quiz about me. (https://teresaliuu.github.io/HW-4-CodeQuiz/)
+This is simple fact quiz about me. (https://teresaliuu.github.io/CodeQuiz/)
 
 There will be a few questions. 
 
